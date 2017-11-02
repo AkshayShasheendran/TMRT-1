@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+blockquote{
+  display:block;
+  /*background: #fff;*/
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+
+  border-left: 0px;
+
+}
+#newsimg{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+@media (max-width: 768px) {
+    p.teamInfo {
+        text-align: none;
+    }
+}
+@media (min-width: 769px) {
+    p.teamInfo {
+        text-align: justify;
+        word-wrap: break-word;
+    }
+}
+
+.container {
+  max-width:100%;
+  /*margin: 5px 5px 0 5px;*/
+  /*padding-left: 1px;*/
+  /*padding-right: 5px;*/
+}
+
+.team-container{
+  padding: 60px 0px;
+}
+
+ h3,p{
+  -webkit-font-size-adjust: 0.5;
+  -moz-font-size-adjust: 0.5;
+  -ms-font-size-adjust: 0.5;
+ }
+
+
+.bg-grey{
+      background-color: #e6e6e6;
+  }
+
+.wrap {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+a:focus,
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+ li {
+  list-style-type: none;
+  position: auto;
+  padding-left: 0px;
+  text-align: center;
+  
+}
+
+
+
+
+
+#flood-right {
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  -webkit-box-shadow: inset 0px 0 0 0  #00264d;
+  -moz-box-shadow: inset 0px 0 0 0  #00264d;
+  -ms-box-shadow: inset 0px 0 0 0  #00264d;
+  -o-box-shadow: inset 0px 0 0 0  #00264d;
+  box-shadow: inset 0px 0 0 0  #00264d;
+  color: black;
+  overflow: hidden;
+}
+h2#flood-right {
+    font-size: large;
+}
+#flood-right:hover {
+  color: white;
+  -webkit-box-shadow: inset 0 0 600px 0  #00264d;
+  -moz-box-shadow: inset 0 0 600px 0   #00264d;
+  -ms-box-shadow: inset 0 0 600px 0   #00264d;
+  -o-box-shadow: inset 0 0 600px 0   #00264d;
+  box-shadow: inset 0 0 600px 0   #00264d;
+}
+
+

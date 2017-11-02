@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TMRT</title>
+    <link rel="icon" type="image/png" href="imgs/logo/TMRTlogosqtrans.png" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="hdrftr.css">
+    <link rel="stylesheet" href="news.css">
+    <link href="logo-nav.css" rel="stylesheet">
+    
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid" id="nav">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          
+          <div class="navbar-left">
+            <a class="navbar-brand" href="index.html"><img src="imgs/logo/logotmrt.png" id="tmrtlogo" alt="logo" style="float:left"/></a>
+          </div>
+          <a href="index.html"><h1 class="brand brand-name navbar-left" style="float:left;font-size:23px;color:#fff;margin-left:15px;margin-top:23px;display:inline;"> <div class="navbar-left desktop-only"> THE MARINE ROBOTICS TEAM</h1></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#sponsors">SPONSORS</a></li>
+            <li><a href="index.html#gallery">GALLERY</a></li>
+            <li><a href="https://www.somaiya.edu/kjsce" target="_blank">KJSCE</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <!--<img src="simple.jpeg" style="width:100%">-->
+      <div class="col-md-12 col-sm-12 col-xs-12 " >
+        <h1 class="text-center">NEWS</h1>
+        
+          <div class="container">
+            <div class="row">
+			<div class="sidenav col-md-3">
+			Recent Updates
+			<ul>
+				<li><a href="https://www.facebook.com/TMRTKJSCE">FB</a></li>
+			<li><a href="https://twitter.com/TMRTKJSCE/">TW</a></li>
+			<li><a href="https://www.linkedin.com/company/13397994/">LI</a></li>
+			</ul>
+			</div>
+              <div class="col-md-9">
+                <h2>SOFTWARE TEAM</h2>
+				
+					<img src="imgs/team/software.jpg" id="teamimg" width="100%">
+				
+<!--                 <h4> <span style="color: #D52D30"> Contact:</span> </h4> <br> -->
+                <p class = "teamInfo"> The software team is responsible for guidance, navigation and control of the AUV. Navigation is carried out using visual feedback and Image Processing(IP) to tackle problems like image distortion underwater and identify objects underwater based on color and contour (shape detection). An autonomous vehicle must be capable of sequencing and scheduling of tasks and thus our software team has a Mission Planning module which prioritizes tasks. Our AUV uses multiple sensors to interact with the surroundings and we need to calibrate the sensors, validate our codes and filter sensor data- we do simulation on Gazebo and ROS to save time and improve quickly.</p>
+                 <img src="imgs/team/software.jpg" id="teamimg" width="100%">
+              
+            </div>
+            </div> <!-- end of div container-->       
+                </div>                
+              </div>
+              </div>
+              
+<a href="#myPage" title="To top"><button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon-chevron-up"></i></button></a>
+<footer class="footer-distributed"> 
+	<div class="container text-center">
+		<div class="somaiyalink desktop-only" style="float:left">
+			<a href="https://www.somaiya.edu/kjsce" target="_blank" ><img src="imgs/logo/kjsce.png" id="somaiyalinkimg" ></a>	
+			<a href="https://www.somaiya.edu/kjsce" target="_blank" ><img src="imgs/logo/somaiya.png" id="somaiyalinkimg"></a>
+		</div>
+		 <div id="social" class="footer-center col-sm-9 col-xs-12" style="text-align: center;"> 
+		    <ul>       
+			<a href="https://www.facebook.com/TMRTKJSCE/" target="_blank" class="icon"><i class="fa fa-facebook-square"></i></a>
+			<a href="https://twitter.com/TMRTKJSCE/" target="_blank" class="icon"><i class="fa fa-twitter-square"></i></a>
+			<a href="https://www.linkedin.com/company/13397994/" target="_blank" class="icon"><i class="fa fa-linkedin-square"></i></a>
+			<br>Made by TMRT Web Team
+		    </ul>
+		 </div>		
+	</div>
+</footer>
+              <script>
+              //Closing the collapse on navbar onclick
+              $('.navbar-collapse a').click(function(){
+              $(".navbar-collapse").collapse('hide');
+              });
+              $(document).ready(function(){
+              // Add smooth scrolling to all links in navbar + footer link
+              $(" a[href='#myPage'] ").on('click', function(event) {
+              // Make sure this.hash has a value before overriding default behavior
+              if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+              // Store hash
+              var hash = this.hash;
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+              scrollTop: $(hash).offset().top
+              }, 900, function(){
+              
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+              });
+              } // End if
+              });
+              
+              window.onscroll = function() {scrollFunction()};
+              function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("myBtn").style.display = "block";
+              } else {
+              document.getElementById("myBtn").style.display = "none";
+              }
+              }
+              // When the user clicks on the button, scroll to the top of the document
+              $(window).scroll(function() {
+              $(".slideanim").each(function(){
+              var pos = $(this).offset().top;
+              var winTop = $(window).scrollTop();
+              if (pos < winTop + 600) {
+              $(this).addClass("slide");
+              }
+              });
+              });
+              })
+              </script>
+            </body>
+          </html>
